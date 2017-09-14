@@ -15,19 +15,12 @@ import java.util.List;
  */
 public class FichaPrincipalP1DTO implements Serializable{
     @SerializedName("formulario")
-    private List<FichaPrincipalP1DTO> registro;
-    private String estado;
-    private String region;
-    private String modulopredio_municipio;
-    private String modulopredio_localidad;
-    private String anio;
-    private String modulopredio_cup;
+    private List<FichaPrincipalP1DTO> registro;    
     private String folio;
     private String expediente;
     private String expediente_origen;
+    private String region;
     private String id_tipo_propiedad;
-    private String latitud_utm;
-    private String longitud_utm;
     private String representante_actual;
     private String representante_original;
     private String rfc;
@@ -57,8 +50,15 @@ public class FichaPrincipalP1DTO implements Serializable{
     private String nivel_programa_manejo_forestal;
     private String num_intervenciones;
     private String situacion_especial_predio;
-    private String fecha_situacion;    
-
+    private String fecha_situacion;  
+    private String anio;
+    private String modulopedio_estado;
+    private String modulopredio_municipio;
+    private String modulopredio_localidad;
+    private String modulopredio_cup;
+    private String latitud_utm;
+    private String longitud_utm;
+    
     public FichaPrincipalP1DTO() {
     }
 
@@ -68,54 +68,6 @@ public class FichaPrincipalP1DTO implements Serializable{
 
     public void setRegistro(List<FichaPrincipalP1DTO> registro) {
         this.registro = registro;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getRegion() {
-        return region;
-    }
-
-    public void setRegion(String region) {
-        this.region = region;
-    }
-
-    public String getModulopredio_municipio() {
-        return modulopredio_municipio;
-    }
-
-    public void setModulopredio_municipio(String modulopredio_municipio) {
-        this.modulopredio_municipio = modulopredio_municipio;
-    }
-
-    public String getModulopredio_localidad() {
-        return modulopredio_localidad;
-    }
-
-    public void setModulopredio_localidad(String modulopredio_localidad) {
-        this.modulopredio_localidad = modulopredio_localidad;
-    }
-
-    public String getAnio() {
-        return anio;
-    }
-
-    public void setAnio(String anio) {
-        this.anio = anio;
-    }
-
-    public String getModulopredio_cup() {
-        return modulopredio_cup;
-    }
-
-    public void setModulopredio_cup(String modulopredio_cup) {
-        this.modulopredio_cup = modulopredio_cup;
     }
 
     public String getFolio() {
@@ -142,28 +94,20 @@ public class FichaPrincipalP1DTO implements Serializable{
         this.expediente_origen = expediente_origen;
     }
 
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
     public String getId_tipo_propiedad() {
         return id_tipo_propiedad;
     }
 
     public void setId_tipo_propiedad(String id_tipo_propiedad) {
         this.id_tipo_propiedad = id_tipo_propiedad;
-    }
-
-    public String getLatitud_utm() {
-        return latitud_utm;
-    }
-
-    public void setLatitud_utm(String latitud_utm) {
-        this.latitud_utm = latitud_utm;
-    }
-
-    public String getLongitud_utm() {
-        return longitud_utm;
-    }
-
-    public void setLongitud_utm(String longitud_utm) {
-        this.longitud_utm = longitud_utm;
     }
 
     public String getRepresentante_actual() {
@@ -404,5 +348,63 @@ public class FichaPrincipalP1DTO implements Serializable{
 
     public void setFecha_situacion(String fecha_situacion) {
         this.fecha_situacion = fecha_situacion;
-    }    
+    }
+
+    public String getAnio() {
+        return anio;
+    }
+
+    public void setAnio(String anio) {
+        this.anio = anio;
+    }
+
+    public String getModulopedio_estado() {
+        return modulopedio_estado;
+    }
+
+    public void setModulopedio_estado(String modulopedio_estado) {
+        this.modulopedio_estado = modulopedio_estado;
+    }
+
+    public String getModulopredio_municipio() {
+        return modulopredio_municipio;
+    }
+
+    public void setModulopredio_municipio(String modulopredio_municipio) {
+        this.modulopredio_municipio = modulopredio_municipio;
+    }
+
+    public String getModulopredio_localidad() {
+        return modulopredio_localidad;
+    }
+
+    public void setModulopredio_localidad(String modulopredio_localidad) {
+        this.modulopredio_localidad = modulopredio_localidad;
+    }
+
+    public String getModulopredio_cup() {
+        return modulopredio_cup;
+    }
+
+    public void setModulopredio_cup(String modulopredio_cup) {
+        this.modulopredio_cup = modulopredio_cup;
+    }
+
+    public String getLatitud_utm() {
+        return latitud_utm;
+    }
+
+    public void setLatitud_utm(String latitud_utm) {
+        this.latitud_utm = latitud_utm;
+    }
+
+    public String getLongitud_utm() {
+        return longitud_utm;
+    }
+
+    public void setLongitud_utm(String longitud_utm) {
+        this.longitud_utm = longitud_utm;
+    }
+
+      
 }
